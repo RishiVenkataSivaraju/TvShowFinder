@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Mono:ital@1&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="tvApi.css" />
+    <link rel="icon" href="C:\Users\sivar\Downloads\tv.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <title>TV Search</title>
+  </head>
+  <body>
+    <h1>Search TV Shows    &#128250;</h1>
+    <form id="search">
+      <div class="console">
+        <input
+          type="text"
+          id="input"
+          name="query"
+          placeholder="Enter The T.V Show Name"
+        />
+        <button id="submit">Search</button>
+      </div>
+      <div>
+        <input
+          type="button"
+          class="refresh"
+          value="Refresh"
+          onclick="history.go(0)"
+        />
+      </div>
+    </form>
+    <div>
+      <span class="image"></span><span class="name"><p class="photo"></p></span
+      ><span class="summary"></span>
+    </div>
+    <script src="tvApi.js"></script>
+    <!-- &#128249; -->
+  </body>
+</html>
